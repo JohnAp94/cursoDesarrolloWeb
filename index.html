@@ -4,68 +4,74 @@
         <meta charset="UTF-8">
         <title>John Aparicio</title>
         <link rel="icon" type="image/png" href="https://i.imgur.com/knuud2x.png">
+        <link href="https://fonts.googleapis.com/css?family==Ubuntu|Quicksand:300,400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="https://i.imgur.com/Nk4g7bk.png" alt="Logo de http://johnaparicio.com">
                 </figure>
-                <nav>
+                <nav class="menu">
                     <ol>
                         <li>
-                            <a href="#portafolio">Portafolio</a>
+                            <a class="link" href="#portafolio">Portafolio</a>
                         </li>
                         <li>
-                            <a href="#experiencia">Experiencia</a>
+                            <a class="link" href="#experiencia">Experiencia</a>
                         </li>
                         <li>
-                            <a href="#contacto">Trabajemos juntos</a>
+                            <a class="link" href="#contacto">Trabajemos juntos</a>
                         </li>
                     </ol>
                 </nav>
             </div>
         </header>
-        <section>
-            <h1>
+        <section class="hero">
+            <h1 >
                 Hola! soy <strong>John Aparicio</strong><br />Desarrollador <strong>Javascript</strong><br /> con pasión por la <strong>enseñanza</strong>
             </h1>
-            <img src="https://i.imgur.com/E58d0EW.jpg" width="500" height="300" alt="imagen principal del sitio">
-        </section>
-        <section id="portafolio">
+<!--             <img src="https://i.imgur.com/E58d0EW.jpg" width="500" height="300" alt="imagen principal del sitio">
+ -->        </section>
+        <section id="portafolio" class="portfolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
-            <article>
-                <h3>Platzi Video</h3>
-                <h6>React Native / React</h6>
-                <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                <p>Platzi video fue el resultado de 3 meses de trabajo
-                    para vrear la mejor app para enseñar el funcionamiento
-                    de React y React Native. Desde crear un vista-detalle, 
-                    hasta patrones avanzados de navegación, este proyecto 
-                    ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
-                </p>
-                <img src="https://i.imgur.com/kZn349x.png" alt="proyecto del curso de React Native" width="500">
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi video fue el resultado de 3 meses de trabajo
+                        para vrear la mejor app para enseñar el funcionamiento
+                        de React y React Native. Desde crear un vista-detalle, 
+                        hasta patrones avanzados de navegación, este proyecto 
+                        ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="https://i.imgur.com/kZn349x.png" alt="proyecto del curso de React Native" width="500">
+                </figure>
             </article>
         </section>
         <section id="experiencia">
             <h2>Más sobre mi experiencia</h2>
-            <article>
-                <figure>
-                    <img src="https://i.imgur.com/067RwGL.jpg" alt="imagen 2" width="500">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="https://i.imgur.com/067RwGL.jpg" alt="imagen 2" width="500">
                 </figure>
-                <h3>PlatziConf México 2018</h3>
-                <p>El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto como tener una vida de constante aprendizaje</p>
-                <a href="https://www.youtube.com/watch?v=q0hyYWKXF0Q" target="_blank">Ver Tone and I - Dance Monkey</a>
+                <h3 class="event-title">PlatziConf México 2018</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto como tener una vida de constante aprendizaje</p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=q0hyYWKXF0Q" target="_blank">Ver Tone and I - Dance Monkey</a>
             </article>
         </section>
-        <section id="contacto">
-            <form action="/suscripcion/">
+        <section id="contacto" class="contact">
+            <form class="form-email" action="/suscripcion/">
                 <h3>¿Creamos algo juntos?</h3>
                 <input type="text" placeholder="Déjame tu email" id="email">
                 <button>Enviar</button>
             </form>
         </section>
-        <footer>footer</footer>
+        <footer class="footer">footer</footer>
     </body>
 </html>
