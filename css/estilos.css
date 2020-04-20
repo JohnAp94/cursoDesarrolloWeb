@@ -133,6 +133,10 @@ h2 {
     width: 500px;
 }
 
+.project-imageContainer img {
+    border-radius: 10px;
+}
+
 .flexbox {
     display: flex;
     flex-wrap: wrap;
