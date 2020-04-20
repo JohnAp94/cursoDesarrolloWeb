@@ -138,21 +138,16 @@ h2 {
     border-radius: 10px;
 }
 
+.project a{
+    text-decoration: none;
+}
+
 .flexbox {
     display: flex;
     flex-wrap: wrap;
     height: 300px;
     align-items: center;
     justify-content: center;
-}
-
-.box {
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    border: 1px solid red;
-
-    flex-shrink: 0;
 }
 
 .footer {
@@ -225,17 +220,11 @@ h2 {
     justify-content: space-between;
 }
 
-.social {
-    border: 1px solid white;
-    padding: 5px 0 0 0;
-    border-radius: 3px;
-}
-
 .social-link {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin: 0 10px;
+    margin: 0 15px;
     background-size: 50px 50px;
 
 }
@@ -256,8 +245,12 @@ h2 {
     background-image: url('../images/instagram.svg');
 }
 
+.form-email {
+    margin-bottom: 15px;
+}
+
 .form-email input{
-    border-color: gray;
+    border-color: rgb(216, 213, 213);
     border-style: solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
