@@ -1,5 +1,6 @@
 body {
     font-family: Ubuntu, sans-serif;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7,16 +8,86 @@ font-family: 'Quicksand', sans-serif;
 font-weight: normal;
 }
 
+.menu {
+    height: inherit;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+header ol li {
+    height: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 h1 {
+    margin: 0px 520px 0px 0px;
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+    color: white;
     /* text-transform: uppercase;
     text-decoration: dashed; */
 }
 
+h1 strong {
+    color: #026fff;
+}
+
 .hero {
     height: 300px;
+    background-image: url("https://i.imgur.com/E58d0EW.jpg");
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.portfolio {
+    background: #fafafa;
+}
+
+.project {
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid orange;
+    border-left: 10px solid pink; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
 }
 
 .project-details {
@@ -25,4 +96,21 @@ h1 {
 
 .project-imageContainer {
     width: 500px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: 1px solid red;
+
+    flex-shrink: 0;
 }
