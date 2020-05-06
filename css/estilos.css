@@ -19,6 +19,7 @@ font-weight: normal;
     align-items: center;
     justify-content: space-between;
     height: 70px;
+    flex-wrap: wrap;
 }
 
 .header a {
@@ -78,6 +79,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -103,13 +105,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.project-course {
-    margin: 10px 0;
-}
-
-.project-date, .project-url {
+.project-course, .project-date, .project-url {
     margin: 10px 0;
 }
 
@@ -127,15 +126,16 @@ h2 {
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
 .project-imageContainer {
-    width: 500px;
+    width: 50%;
 }
 
 .project-imageContainer img {
     border-radius: 10px;
+    max-width: 100%;
 }
 
 .project a{
@@ -156,6 +156,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -176,8 +177,8 @@ h2 {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -218,6 +219,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -276,7 +278,8 @@ h2 {
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
