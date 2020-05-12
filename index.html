@@ -5,11 +5,13 @@
         <title>John Aparicio</title>
         <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/26e07f/j.png">
         <link href="https://fonts.googleapis.com/css?family==Ubuntu|Quicksand:300,400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/icomoon/style.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/mediaQueri.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header">
             <div class="container">
                 <figure class="logo">
@@ -40,7 +42,7 @@
         </section>
         <section id="portafolio" class="portfolio">
             <div class="container">
-                <h2><strong>Portafolio (Proyectos Destacados)</strong></h2>
+                <h2 class="title-portfolio"><strong>Portafolio (Proyectos Destacados)</strong></h2>
                 <article class="project">
                     <div class="project-details">
                         <h3 class="project-title">Platzi Video</h3>
@@ -80,11 +82,13 @@
         <div class="container">
             <h2 class="event-list-title">Más sobre mi experiencia</h2>
         </div>
-        <section id="eventos" class="event-list">
+        <section id="experiencia" class="event-list">
             <div class="container">
                 <article class="event">
                     <figure class="event-imageContainer">
-                        <img class="event-image" src="https://i.imgur.com/NxpkWu5.jpg" alt="imagen 2" width="500">
+                        <div class="flexible-video">
+                            <iframe class="youtube-video-verbe"width="956" height="538" src="https://www.youtube.com/embed/DqHLPCLRnN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </figure>
                     <div class="event-detail">    
                         <h3 class="event-title">PlatziConf México 2018</h3>
@@ -94,7 +98,9 @@
                 </article>
                 <article class="event">
                     <figure class="event-imageContainer">
-                        <img class="event-image" src="https://i.imgur.com/NxpkWu5.jpg" alt="imagen 2" width="500">
+                        <div class="flexible-video">
+                            <iframe class="youtube-video-verbe" width="956" height="538" src="https://www.youtube.com/embed/r9nysMLO_Ns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </figure>
                     <div class="event-detail">    
                         <h3 class="event-title">PlatziConf México 2018</h3>
@@ -146,10 +152,42 @@
                 </div>
                 <div>
                     <p>
-                        Designed with love by <a href="https://twitter.com/johnap94" target="_blank">John<img src="https://img.icons8.com/ios-filled/50/26e07f/pixel-heart.png" height="30"/></a>
+                        Designed with love by <a href="https://twitter.com/johnap94" target="_blank">John <img src="https://img.icons8.com/ios-filled/50/26e07f/pixel-heart.png" height="30"/></a>
                     </p>
                 </div>
             </div>
         </footer>
+        <script>
+            const ipad = window.matchMedia('screen and (max-width:767px)');
+            const menu = document.querySelector('.menu');
+            const burgerButton = document.querySelector('#burger-menu');
+            
+            ipad.addListener(validation)
+            validation(ipad);
+
+            function validation(event){
+                if(event.matches)
+                {
+                    burgerButton.addEventListener('click', hideShow)                    
+                }
+                else
+                {
+                    burgerButton.removeEventListener('click', hideShow)                    
+                }
+            }
+
+            function hideShow(){
+                if(menu.classList.contains('is-active'))
+                {
+                menu.classList.remove('is-active');
+                }
+                else
+                {
+                menu.classList.add('is-active');
+                }
+            }
+
+
+        </script>
     </body>
 </html>
